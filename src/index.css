@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f1f5f9;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Plus Jakarta Sans', serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Print styling for certificates, ID cards, and 201 records */
+@media print {
+  header, aside, nav, button, .print\:hidden {
+    display: none !important;
+  }
+
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #certificate-print-sheet {
+    max-width: 100% !important;
+    border-width: 6px !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  #member-dossier-print {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+}

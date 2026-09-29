@@ -1,0 +1,8 @@
+{
+  "name": "SACERT Emergency Response Management System",
+  "description": "Official digital management, membership, training, certification, communication, and records platform for the San Andres Community Emergency Response Team (SACERT).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
